@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct lista{
+typedef struct pilha{
     int value;
-    struct lista *prox;
-}Tlista;
+    struct pilha *prox;
+}Tpilha;
 
 void *initialize(){
     return NULL;

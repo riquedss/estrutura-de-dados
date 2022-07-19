@@ -1,7 +1,7 @@
 #include "Tpilha.h"
 
-Tlista *createNo(int value){
-    Tlista *no = (Tlista*) malloc(sizeof(Tlista));
+Tpilha *createNo(int value){
+    Tpilha *no = (Tpilha*) malloc(sizeof(Tpilha));
     no->value = value;
     no->prox = NULL;
     return no;
@@ -10,8 +10,8 @@ Tlista *createNo(int value){
 
 
 int main(){
-    Tlista *lista = initialize();
-    Tlista *no = createNo(10);
+    Tpilha *lista = initialize();
+    Tpilha *no = createNo(10);
     printf("%d\n", no->value);
 
     return 0;
