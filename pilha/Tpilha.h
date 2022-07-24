@@ -4,8 +4,10 @@
 typedef struct pilha{
     int value;
     struct pilha *prox;
-}Tpilha;
+} TPilha;
 
-void *initialize(){
-    return NULL;
-}
+void busca(TPilha *no);
+void Tlibera(TPilha *inicio);
+TPilha *cria(int value);
+TPilha *push(TPilha *inicio, int value);
+TPilha *pop(TPilha *inicio);
